@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 700px; /* Unnecessary. Added to stop breaking while resizing. */
+  padding: 10px; /* Forgot to add padding */
+  
 }
 
 .logo {
@@ -14,6 +20,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  padding: 0px;
+  gap: 10px;
+  margin: 0px; /* First edit: Originally was set to 8px, default seemed like 0 even though the instructions stated that ul's have margin by default. Second edit: ul's didn't align properly with the edge because of the header padding. */
 }
 
 a {
