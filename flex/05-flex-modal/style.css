@@ -37,6 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border: solid 1px yellow;
 }
 
 .close-button {
@@ -74,6 +75,7 @@ button.cancel {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 15px;
+  border: solid 2px crimson;
 }
 
 .header {
@@ -83,4 +85,11 @@ button.cancel {
   /* align-items: center; */ /* Part of the official solution. */
   font-size: 20px;
   font-weight: bold;
+  border: solid 1px coral;
+  /* margin-bottom: 8px; */ /* Part of the official solution. *//* Alternative for "gap" on .container class. */
+}
+
+.text {
+  border: solid 1px magenta;
+  /* margin-bottom: 15px; */ /* Part of the official solution. */ /* Alternative for "gap" on .container class. */
 }
