@@ -31,7 +31,7 @@ input {
 }
 
 ul {
-  /* display: flex; */ /* Part of the official solution. Alternative for using "left-links & right-links" classes as the flex containers. */
+  /* display: flex; */ /* Part of the official solution. Alternative to using "left-links & right-links" classes as the flex containers. */
   list-style-type: none;
   padding: 0px;
   margin: 0px; /* Forgot to remove margin. */
@@ -65,5 +65,5 @@ a {
   align-items: center;
   justify-content: center; /* Part of the official solution, but seems to work without it. */
   gap: 5px;
-  /* flex: 1; */ /* Part of the official solution. Not sure why is it necessary to allow flex items to grow.  */
+  flex: 1; /* Part of the official solution. Not sure why is it necessary to allow flex items to grow.  */
 }
