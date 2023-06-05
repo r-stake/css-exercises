@@ -4,26 +4,85 @@ body {
   min-height: 100vh;
 }
 
+.flex-container {
+  display: flex;
+}
+
+body.flex-container {
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  width: 100%;
 }
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+.header.flex-container {
+  align-items: center;
+}
+
+.content.flex-container {
+  flex: 1; /* Official solution */
+  align-items: stretch;
+  /* height: 100%; */ /* Breaks upon screen resizing*/
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.card-container.flex-container {
+  flex-wrap: wrap;
+  /* justify-content: center; */ /* Unnecessary */
+  align-items: center;
+  gap: 16px;
+  padding: 32px; /* Part of the official solution */
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 32px;
+  /* width: 25%; */ /* My solution */
+  /* height: 33%; */ /* My solution */
+  width: 300px; /* Official solution */
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  align-self: flex-end;
+  width: 100%;
+}
+
+.footer.flex-container {
+  justify-content: center;
+  align-items: center;
 }
